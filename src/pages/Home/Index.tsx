@@ -34,6 +34,7 @@ export const Home = () => {
           style={styles.input}
         />
         <TouchableOpacity
+          testID="addButton"
           onPress={handleAddNewTask}
           activeOpacity={0.7}
           style={styles.button}
@@ -72,7 +73,7 @@ const styles = StyleSheet.create({
   },
   input: {
     backgroundColor: '#29292E',
-    fontSize: 18,
+    fontSize: 20,
     padding: Platform.OS === 'ios' ? 15 : 12,
     marginTop: 30,
     borderRadius: 7,

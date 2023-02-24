@@ -35,7 +35,7 @@ export const TaskList = () => {
             onPress={() => handleRemoveTask(item.id)}
             style={styles.buttonTask}
           >
-            <Text style={styles.titleTask}>{item.title}</Text>
+            <Text>{item.title}</Text>
           </TouchableOpacity>
         );
       }}
@@ -51,9 +51,9 @@ const styles = StyleSheet.create({
     borderRadius: 7,
     alignItems: 'center',
   },
-  titleTask: {
-    color: '#F1F1F1',
-    fonteSize: 20,
-    fontWeight: 'bold',
-  },
+  // titleTask: {
+  //   color: '#F1F1F1',
+  //   fonteSize: 16,
+  //   fontWeight: 'bold',
+  // },
 });
